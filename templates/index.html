@@ -1,0 +1,301 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CYKL - Book Cycles Online</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="{%static 'img\cycle.png' %}" type="image/png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="{%static 'css/bootstrap.css' %}">
+<link rel="stylesheet" type="text/css" href="{%static 'fonts/font-awesome/css/font-awesome.css' %}">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="{%static 'css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{%static 'css/nivo-lightbox/nivo-lightbox.css' %}">
+<link rel="stylesheet" type="text/css" href="{%static 'css/nivo-lightbox/default.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="static/js/modernizr.custom.js"></script>
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+        <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span> 
+         <span class="icon-bar"></span> 
+         <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand page-scroll" href="#page-top">
+       CYKL</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#page-top" class="page-scroll">Home</a></li>
+        <li><a href="#about" class="page-scroll">About Us</a></li>
+        <li><a href="#portfolio" class="page-scroll">checkpoints</a></li>
+        <li><a href="#contact" class="page-scroll">Login</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="container">
+      <div class="row">
+        <div class="intro-text">
+          <div class="box">
+            <h1>CYKL</h1>
+              </div class="byline">
+          <!-- <p>Cylces At Your Convinience </p> -->
+          <br>
+          <a href="#about" class="hero"><b>Learn More</b></a> </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>About Us</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-6"> <img src="{%static 'img/bartender.png' %}" class="img-responsive" alt=""> </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="about-text">
+          <p>Commuting throughout the campus becomes difficult for students specially when the campus is so big,
+             CYKL helps students to overcome this difficulty by helping them book cycles online from one checkpoint to another within the campus.
+          </p>
+          <p>
+            Any student who wants to rent a cycle can login into her/his account, select the 
+            checkpoints of commute,depending upon the availibity of cycles and parking space at
+             the checkpoints students will be alloted a specific cycle within in a specific 
+             time-frame.The student can then pick up the cycle from one checkpoint, travel to
+              the other and submit the cycle there.
+            </p>
+            <p>
+            Every cycle has its own code and after every 150 rides each cycle will be inspected 
+            for maintainace. Each student is allowed to go on 15 rides per week , this is done so 
+            that most students can use the facility of CKYL to the greatest.
+            </p>
+            
+    
+          <a href="#portfolio" class="btn btn-default btn-lg page-scroll">Checkpoints</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Checkpoint Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>CHECKPOINTS</h2>
+      <hr>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">All</a></li>
+            <li><a href="#" data-filter=".web">Hostels</a></li>
+            <li><a href="#" data-filter=".photography">Places</a></li>
+            <!-- <li><a href="#" data-filter=".product">Product Design</a></li> -->
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-3 col-lg-3 photography">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{%static 'img/portfolio/01-large.jpg'%} " title="COS" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>TSLAS</h4>
+              </div>
+              <img src="{%static 'img\portfolio\TSLAS.jfif' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/02-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>H HOSTEL</h4>
+              </div>
+              <img src="{%static 'img\portfolio\Hhostel.png' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/03-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>J HOSTEL</h4>
+              </div>
+              <img src="{%static 'img\portfolio\Jhostel.jfif' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/04-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>K HOSTEL</h4>
+              </div>
+              <img src="{%static 'img\portfolio\Khostel.jfif' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/05-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>L HOSTEL</h4>
+              </div>
+              <img src="{%static 'img\portfolio\Lhostel.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/06-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>M HOSTEL</h4>
+              </div>
+              <img src="{%static 'img\portfolio\Mhostel.jfif' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/07-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>O HOSTEL</h4>
+              </div>
+              <img src="{%static 'img\portfolio\Ohostel.png' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/08-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>PG</h4>
+              </div>
+              <img src="{%static 'img\portfolio\Pg.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 photography">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/09-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>TAN</h4>
+              </div>
+              <img src="{%static 'img\portfolio\Tan.jfif' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 photography">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/10-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>JAGGI</h4>
+              </div>
+              <img src="{%static 'img\portfolio\jaggi.jfif' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 photography">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/11-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>COS</h4>
+              </div>
+              <img src="{%static 'img\portfolio\COS.jfif' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 photography">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/12-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>F BLOCK</h4>
+              </div>
+              <img src="{%static 'img\portfolio\F-block.jfif' %}" class="img-responsive" alt="Project Title"> </a> </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Section -->
+<div id="contact" class="text-center">
+  <div class="container">
+    <div class="center">
+      <span>
+        <h2>Login</h2>
+      </span>
+      
+      <hr>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <form name="sentMessage" id="contactForm" action="login" method="POST">
+        {% csrf_token %}
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" id="username" name="username" class="form-control" placeholder="Username" >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="password" id="password" name="password" class="form-control" placeholder="Password" >
+              
+            
+            </div>
+          </div>
+        </div>
+        <!--<button type="submit" class="btn btn-default btn-lg" onclick="login">Submit</button>-->
+        <input type="submit" class="btn btn-default btn-lg"/>
+    </form>
+    <form action="register">
+        <button type="submit" class="btn btn-default btn-lg">Register</button>
+    </form>
+        
+      
+      <div class="social">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-github"></i></a></li>
+          <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container text-center">
+    
+  </div>
+</div>
+{% block content %}
+{% endblock %}
+<script type="text/javascript" src="static/js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="static/js/bootstrap.js"></script> 
+<script type="text/javascript" src="static/js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="static/js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="static/js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="static/js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="static/js/contact_me.js"></script> 
+<script type="text/javascript" src="static/js/main.js"></script>
+</body>
+</html>

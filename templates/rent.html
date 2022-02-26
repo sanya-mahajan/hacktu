@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<html lang="en">
+
+    <head>
+        
+        <title>Convert Files</title>
+        <link rel="stylesheet" href= "{%static 'css/style2.css' %}" >
+        </head>
+		<style>
+			body {
+				background-image: url("static/img/blue.jpg");
+			}
+		</style>
+        <body>
+            <section class="chckpts">
+               <h1> <p class="file" >Checkpoints for different locations </p></h1>
+                
+                <p class="mario"><form>
+					<select title="checkpts" name="checkpoint codes" id="checkpoints">
+						<option >hostel H : 1</option>
+						<option >hostel J : 2</option>
+						<option >hostel L : 3</option>
+						<option >hostel O : 4</option>
+						<option >hostel PG : 5</option>
+						
+						<option >cos : 6</option>
+						<option >jaggi : 7</option>
+						<option >tan : 8</option>
+						<option >f block : 9</option>
+						<option >tslas : 10</option>
+						<option >hostel K : 11</option>
+						<option >hostel M : 12</option>
+					  </select>
+
+				</form></p></a><div>
+					<p class="luigi"><input title="start" type="text" > starting</p>
+                <p class="wario"><input title="end" type="text" >ending</p>
+				</div>
+                <div>
+					<p class="date"><label for="start">Date</label>
+						<input type="date" id="date" name="trip-start"
+						value="2018-07-22"
+						min="2018-01-01" max="2018-12-31"></p>
+						<label for="appt">Choose the start time:</label>
+
+						<input type="time" id="appt" name="appt"
+							   min="09:00" max="18:00" required>
+							   <label for="appt">Choose the end time:</label>
+
+						<input type="time" id="appt" name="appt"
+							   min="09:00" max="18:00" required>
+
+				</div>
+             </section>
+        </body>
+
+
+</html>
+    
